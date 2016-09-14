@@ -31,4 +31,12 @@ end
         p num
     end
 end
+
+#print the sum of array 
+arr = []
+File.open(ARGV[0]).each_line do |line|
+    arr << line.to_i 
+end
+
+p arr.inject(:+)
      
